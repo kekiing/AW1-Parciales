@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;  /*cambia el comportamiento default del navegador que es content-box, y como es
+                              es '*' matchea con todo el html*/
+}
+
+.caja-content {
+    box-sizing: content-box; /*para este */
+    width: 200px;
+    padding: 20px;
+    border: 5px solid black;
+}
+/*En este caso, se suma el width + padding + border. Dando asi mas de 200px de ancho*/
+
+
+.caja-border {
+    /*box-sizing: border-box;  ---> aca no hace falta porque ya lo aplica con el selector universal mas arriba */ 
+    width: 200px;
+    padding: 20px;
+    border: 5px solid black;
+}
+
+/*Caso contrario aca, donde se va a manetener en los 200px de ancho total*/|
